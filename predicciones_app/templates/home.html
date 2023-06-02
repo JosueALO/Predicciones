@@ -1,0 +1,11 @@
+<html>
+<body>
+  <h2>Sube un archivo CSV:</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="csv_file">
+    <br><br>
+    <input type="submit" value="Calcular R2">
+  </form>
+</body>
+</html>
